@@ -1,12 +1,14 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "description": "Portfolio site of Prabhakar Rai",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.1.1",
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
+    "gh-pages": "^3.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -16,7 +18,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -36,6 +40,16 @@
       "last 1 safari version"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrabhakarRai/prabhakarrai.github.io.git"
+  },
+  "author": "Prabhakar Rai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PrabhakarRai/prabhakarrai.github.io/issues"
+  },
+  "homepage": "https://prabhakarrai.github.io/",
   "devDependencies": {
     "@tailwindcss/postcss7-compat": "^2.1.0",
     "autoprefixer": "^9.8.6",
